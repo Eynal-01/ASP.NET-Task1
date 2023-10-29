@@ -1,0 +1,25 @@
+﻿@model ASP.NET_Task1.Models.FastFoodViewModel
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+    <h1>We have @Model.FastFoods.Count() FastFoods in stock</h1>
+    @foreach (var item in Model.FastFoods)
+    {
+        <div>
+            <h1>Id : @item.Id</h1> +
+            <h1>Name : @item.Name</h1>
+            <h1>Rating : @item.Rating</h1>
+            <h1>Amount : @item.Amount</h1>
+        </div>
+    }
+</body>
+
+</html>
