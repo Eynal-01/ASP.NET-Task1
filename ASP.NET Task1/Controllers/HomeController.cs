@@ -120,11 +120,11 @@ namespace ASP.NET_Task1.Controllers
                     Amount=6.8
                 }
             };
-            var viewModel = new FastFoodViewModel
+            var viewModel1 = new FastFoodViewModel
             {
                 FastFoods = fastfoods
             };
-            return View(viewModel);
+            return View(viewModel1);
         }
 
 
@@ -175,11 +175,11 @@ namespace ASP.NET_Task1.Controllers
                     Amount=20
                 }
             };
-            var viewModel = new HotMealViewModel
+            var viewModel2 = new HotMealViewModel
             {
                 HotMeals = hotmeals
             };
-            return View(viewModel);
+            return View(viewModel2);
         }
 
     }
